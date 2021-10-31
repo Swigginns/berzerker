@@ -1,0 +1,11 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": -1
+    },
+    "interval": 300,
+    "name": "Violent Nature",
+    "description": "You need fresh carnage to stay battle ready. (Carnage drains over time.)"
+}

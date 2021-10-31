@@ -1,0 +1,29 @@
+{
+    "powers": [
+        "swig:bzcarnage",
+        "swig:bzcarnagereduction",
+        "swig:bzcarnage5",
+        "swig:bzcarnage15",
+        "swig:bzcarnage25",
+        "swig:bzcarnage35",
+        "swig:bzcarnage45",
+        "swig:bzcarnagedecay",
+        "swig:bzkillcarnage",
+        "swig:bzinsanity",
+        "swig:bzinsanityreduction",
+        "swig:bzinsanity5",
+        "swig:bzinsanity15",
+        "swig:bzinsanity25",
+        "swig:bzinsanity35",
+        "swig:bzinsanity45",
+        "swig:bzinsanitydecay",
+        "swig:bzstrength",
+        "swig:bzthorns",
+        "swig:bzkillinsanity"
+    ],
+    "icon": "minecraft:iron_axe",
+    "order": 10,
+    "impact": 2,
+    "name": "Berzerker",
+    "description": "Take care not to lose your sanity in the carnage."
+}

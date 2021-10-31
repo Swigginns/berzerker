@@ -1,0 +1,269 @@
+{
+    "type": "origins:multiple",
+    "campfire": {
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+        "type": "origins:change_resource",
+    "resource": "swig:bzcarnage",
+    "change": -1,
+    "hud_render": {
+        "should_render": false
+    }
+},
+{
+    "type": "origins:execute_command",
+    "command": "time add 2000t"
+}
+        ]
+    },
+"cooldown": 12000,
+"key": {
+    "key": "key.use"
+},
+"condition": {
+"type": "origins:block_in_radius",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:campfire"
+    },
+    "radius": 1,
+    "shape": "cube",
+    "comparison": ">=",
+    "compare_to": 1
+    }
+},
+"fishing": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": -1
+    },
+    "interval": 200,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+        "type": "origins:block_in_radius",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+    },
+    "radius": 1,
+    "shape": "cube",
+    "comparison": ">=",
+    "compare_to": 3
+    },
+    {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:fishing_rod"
+          }
+        }
+      }
+        ]
+    }
+},
+"wfarming": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": -1
+    },
+    "interval": 200,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+        "type": "origins:block_in_radius",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:farmland"
+    },
+    "radius": 2,
+    "shape": "cube",
+    "comparison": ">=",
+    "compare_to": 2
+    },
+    {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:wheat_seeds"
+          }
+        }
+      }
+        ]
+    }
+},
+"pfarming": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": -1
+    },
+    "interval": 200,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+        "type": "origins:block_in_radius",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:farmland"
+    },
+    "radius": 2,
+    "shape": "cube",
+    "comparison": ">=",
+    "compare_to": 2
+    },
+    {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:pumpkin_seeds"
+          }
+        }
+      }
+        ]
+    }
+},
+"bfarming": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": -1
+    },
+    "interval": 200,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+        "type": "origins:block_in_radius",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:farmland"
+    },
+    "radius": 2,
+    "shape": "cube",
+    "comparison": ">=",
+    "compare_to": 2
+    },
+    {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:beetroot_seeds"
+          }
+        }
+      }
+        ]
+    }
+},
+"mfarming": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": -1
+    },
+    "interval": 200,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+        "type": "origins:block_in_radius",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:farmland"
+    },
+    "radius": 2,
+    "shape": "cube",
+    "comparison": ">=",
+    "compare_to": 2
+    },
+    {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:melon_seeds"
+          }
+        }
+      }
+        ]
+    }
+},
+"boating": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": -1
+    },
+    "interval": 200,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+        "type": "origins:block_in_radius",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+    },
+    "radius": 2,
+    "shape": "cube",
+    "comparison": ">=",
+    "compare_to": 3
+    },
+    {
+        "type": "origins:riding",
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:boat"
+        }
+    }
+      }
+        ]
+    }
+},
+"reading": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": -1
+    },
+    "interval": 200,
+    "condition": {
+        "type": "origins:block_in_radius",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:bookshelf"
+    },
+    "radius": 3,
+    "shape": "cube",
+    "comparison": ">",
+    "compare_to": 14
+    }
+},
+"hidden": true
+}

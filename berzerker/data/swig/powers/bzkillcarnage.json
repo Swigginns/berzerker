@@ -1,0 +1,13 @@
+{
+    "type": "origins:self_action_on_kill",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": 1
+    },
+    "cooldown": 10,
+    "hud_render": {
+        "should_render": false
+    },
+    "hidden": true
+}

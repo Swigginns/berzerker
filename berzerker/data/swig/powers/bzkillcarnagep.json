@@ -1,0 +1,17 @@
+{
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "swig:bzcarnage",
+        "change": 1
+    },
+    "target_condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:player"
+    },
+    "cooldown": 20,
+    "hud_render": {
+        "should_render": false
+    },
+    "hidden": true
+}
