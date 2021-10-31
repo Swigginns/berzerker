@@ -5,6 +5,6 @@
         "resource": "swig:bzinsanity",
         "change": -1
     },
-    "interval": 600,
+    "interval": 1200,
     "hidden": true
 }

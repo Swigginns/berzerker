@@ -5,7 +5,7 @@
         "resource": "swig:bzcarnage",
         "change": -1
     },
-    "interval": 300,
+    "interval": 600,
     "name": "Violent Nature",
     "description": "You need fresh carnage to stay battle ready. (Carnage drains over time.)"
 }
